@@ -1,0 +1,19 @@
+{
+  "name": "design_patterns_javascript",
+  "version": "1.0.0",
+  "description": "Design Patterns with JavaScript & Node",
+  "main": "BuilderPattern.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HasiniSandunika/Training.git"
+  },
+  "author": "Hasini Sandunika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HasiniSandunika/Training/issues"
+  },
+  "homepage": "https://github.com/HasiniSandunika/Training#readme"
+}
