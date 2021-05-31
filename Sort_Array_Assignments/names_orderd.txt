@@ -1,0 +1,14 @@
+Name: cad, Value: 8
+Name: dac, Value: 8
+Name: AAAAAAAAA, Value: 9
+Name: aaaaaaaaaaa, Value: 11
+Name: dggg, Value: 25
+Name: avdd 1, Value: 31
+Name: sad12 ggg, Value: 45
+Name: cdggggs, Value: 54
+Name: cdsgggg, Value: 54
+Name: cgggsgd, Value: 54
+Name: ggggcsd, Value: 54
+Name: sggcgdg, Value: 54
+Name: jng jhh, Value: 57
+Name: jnh ghj, Value: 57
