@@ -1,6 +1,5 @@
 package com.hasini.rentcloud.vehicleservice.vehicleservice.service;
 
-import com.hasini.rentcloud.commons.model.Customer;
 import com.hasini.rentcloud.commons.model.Vehicle;
 import com.hasini.rentcloud.vehicleservice.vehicleservice.repository.VehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
