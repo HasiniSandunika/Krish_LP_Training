@@ -22,7 +22,7 @@ VALUES ('1', 'hasini','{bcrypt}$2a$10$ODGwrk2ufy5d7T6afmACwOA/6j6rvXiP5amAMt1YjO
  VALUES ('2', 'hasini1', '{bcrypt}$2a$10$wQ8vZl3Zm3.zDSIcZEYym.bGq3fPMJXH9k.Vhudcfr6O6KQwDPSt6','h1@hasini1.com', '1', '1', '1', '1');
 
 INSERT INTO ROLE_USER (ROLE_ID, USER_ID)
-    VALUES (1, 1); /* krish-admin */
+    VALUES (1, 1); /* hasini-admin */
 
 INSERT INTO ROLE_USER (ROLE_ID, USER_ID)
-    VALUES (2, 2); /* suranga-operatorr */
+    VALUES (2, 2); /* hasini1-operatorr */
