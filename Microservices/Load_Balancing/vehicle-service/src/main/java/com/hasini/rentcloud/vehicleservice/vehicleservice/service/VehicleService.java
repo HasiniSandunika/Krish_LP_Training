@@ -1,7 +1,6 @@
 package com.hasini.rentcloud.vehicleservice.vehicleservice.service;
 
 import com.hasini.rentcloud.commons.model.vehicle.Vehicle;
-
 import java.util.List;
 
 public interface VehicleService {

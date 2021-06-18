@@ -4,7 +4,6 @@ import com.hasini.rentcloud.commons.model.vehicle.Vehicle;
 import com.hasini.rentcloud.vehicleservice.vehicleservice.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
