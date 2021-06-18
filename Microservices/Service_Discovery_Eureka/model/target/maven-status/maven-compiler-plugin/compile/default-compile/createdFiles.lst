@@ -1,0 +1,4 @@
+com\hasini\rentcloud\commons\model\customer\Customer.class
+com\hasini\rentcloud\commons\model\customer\Loyalty.class
+com\hasini\rentcloud\commons\model\vehicle\Vehicle.class
+com\hasini\rentcloud\commons\model\rent\Rent.class
