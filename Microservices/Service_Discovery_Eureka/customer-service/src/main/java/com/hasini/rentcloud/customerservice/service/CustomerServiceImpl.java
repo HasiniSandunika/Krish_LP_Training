@@ -4,7 +4,6 @@ import com.hasini.rentcloud.commons.model.customer.Customer;
 import com.hasini.rentcloud.customerservice.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 @Service

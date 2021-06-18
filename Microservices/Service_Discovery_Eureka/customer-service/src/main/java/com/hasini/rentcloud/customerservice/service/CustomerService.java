@@ -1,7 +1,6 @@
 package com.hasini.rentcloud.customerservice.service;
 
 import com.hasini.rentcloud.commons.model.customer.Customer;
-
 import java.util.List;
 
 public interface CustomerService {
