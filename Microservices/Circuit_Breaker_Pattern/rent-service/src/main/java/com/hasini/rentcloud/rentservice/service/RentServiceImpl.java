@@ -22,12 +22,14 @@ import java.util.concurrent.Future;
 
 @Service
 public class RentServiceImpl implements RentService{
+
     @Autowired
     RentRepository rentRepository;
     @Autowired
     RestTemplate restTemplate;
     @Autowired
     HystrixCommand.Setter setter;
+
     @Override
     public Rent save(Rent rent) {
         return rentRepository.save(rent);
@@ -80,4 +82,5 @@ public class RentServiceImpl implements RentService{
     RestTemplate getRestTemplate(RestTemplateBuilder restTemplateBuilder){
         return restTemplateBuilder.build();
     }
+
 }

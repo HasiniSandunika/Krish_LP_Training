@@ -43,4 +43,5 @@ public class CommonHystrixCommand<T> extends HystrixCommand<T> {
         }
         return super.getFallback();
     }
+
 }

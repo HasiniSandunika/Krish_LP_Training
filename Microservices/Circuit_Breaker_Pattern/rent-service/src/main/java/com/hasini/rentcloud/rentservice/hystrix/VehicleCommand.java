@@ -26,4 +26,5 @@ public class VehicleCommand extends HystrixCommand<Vehicle> {
         System.out.println("hit on fallback");
         return new Vehicle();
     }
+
 }
