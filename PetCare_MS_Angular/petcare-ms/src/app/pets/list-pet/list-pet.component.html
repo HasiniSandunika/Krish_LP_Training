@@ -1,0 +1,60 @@
+<!-- <p>pets works hhhh!</p> -->
+<div class="card">
+    <div class="class-header">
+        {{title}}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">
+                -------
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                Filter with Pet's Name:
+            </div>
+            <div class="col-md-4">
+                <input type="text" [(ngModel)]="NameFilter"/>
+            </div>
+            <div class="col-md-6">
+                <a class="btn btn-primary" (click)="createPet()">Create Pet</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>
+                    Filter By: {{NameFilter}}
+                </h6>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf='pets.length'>
+                <thead>
+                    <tr>
+                        <th>Pet ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pet of filteredPets">
+                        <td>{{pet.id}}</td>
+                        <td>{{pet.name}}</td>
+                        <td>{{pet.type}}</td>
+                        <td>{{pet.gender}}</td>
+                        <td>{{pet.age}}</td>               
+                        <th>
+                            <a class="btn btn-primary" (click)="editRowPet(pet.id)">Edit</a>
+                        </th>
+                        <th>
+                            <a class="btn btn-primary" (click)="deleteRowPet(pet.id)">Delete</a>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

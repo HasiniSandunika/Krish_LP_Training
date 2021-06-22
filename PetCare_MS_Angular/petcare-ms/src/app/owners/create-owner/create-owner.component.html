@@ -1,0 +1,71 @@
+<div class="create-pet-base">
+    <div class="class-header">
+        Create Owner
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">
+                -------
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <h5>Create Owner</h5>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Name:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="OCName"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Residence:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="OCResidence"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Contact:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="OCContact"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Gender:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="OCGender"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-5">
+                        <div class="col-md-3"> 
+                            <a class="btn btn-primary" (click)="createCreateOwner()">Create</a>
+                        </div>
+                    <div class="col-md-2">
+                        <a class="btn btn-primary" (click)="cancelCreateOwner()">Cancel</a>
+                    </div>
+                    </div>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    

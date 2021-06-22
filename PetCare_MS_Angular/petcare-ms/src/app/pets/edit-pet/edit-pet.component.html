@@ -1,0 +1,71 @@
+<div class="edit-pet-base">
+    <div class="class-header">
+        Edit Pet
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">
+                -------
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <h5>Edit Pet</h5>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Name:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="EName"/>                           
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Type:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="EType"/>    
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Gender:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="EGender"/>    
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Age:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="EAge"/>    
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <a class="btn btn-primary" (click)="editEditPet()">Edit</a>
+                        </div>
+                    <div class="col-md-2">
+                        <a class="btn btn-primary" (click)="cancelEditPet()">Cancel</a>
+                    </div>
+                    </div>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    

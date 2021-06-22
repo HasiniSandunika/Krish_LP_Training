@@ -1,0 +1,8 @@
+[   {"id":1, "name":"Lucifer","type":"Dog","gender":"Male","age":5},
+    {"id":2, "name":"Lolo","type":"Dog","gender":"Female","age":2},
+    {"id":3, "name":"Ollii","type":"Cat","gender":"Female","age":4},
+    {"id":4, "name":"Jeff","type":"Cat","gender":"Female","age":5},
+    {"id":5, "name":"Jojo","type":"Parrot","gender":"Female","age":4},
+    {"id":6, "name":"Luff","type":"Gold Fish","gender":"Male","age":1},
+    {"id":7, "name":"Tobby","type":"Sqirrel","gender":"Male","age":1}
+]
