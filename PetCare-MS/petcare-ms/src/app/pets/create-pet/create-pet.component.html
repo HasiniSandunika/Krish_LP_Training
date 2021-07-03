@@ -1,0 +1,71 @@
+<div class="create-pet-base">
+    <div class="class-header">
+        Create Pet
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">
+                -------
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <h5>Create Pet</h5>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Name:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="CName"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Type:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="CType"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Gender:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="CGender"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+                            Age:
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" [(ngModel)]="CAge"/>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <a class="btn btn-primary" (click)="createCreatePet()">Create</a>
+                        </div>
+                    <div class="col-md-2">
+                        <a class="btn btn-primary" (click)="cancelCreatePet()">Cancel</a>
+                    </div>
+                    </div>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    
