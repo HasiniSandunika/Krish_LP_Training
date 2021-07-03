@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpService } from '../shared/http.service';
-import { OwnerCreateDTO } from './dto/OwnerCreateDTO.dto';
-import { OwnerUpdateDTO } from './dto/OwnerUpdateDTO.dto';
-import { Owner } from './Owners.model';
+import { HttpService } from '../../shared/http.service';
+import { OwnerCreateDTO } from '../dto/OwnerCreateDTO.dto';
+import { OwnerUpdateDTO } from '../dto/OwnerUpdateDTO.dto';
+import { Owner } from '../model/Owners.model';
 
 @Injectable({
   providedIn: 'root'

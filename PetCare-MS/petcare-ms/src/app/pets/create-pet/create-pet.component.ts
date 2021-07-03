@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PetService } from '../pet.service';
+import { PetService } from '../service/pet.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -47,7 +47,7 @@ export class CreatePetComponent implements OnInit, OnDestroy {
         this.router.navigate(['/pets']);
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     });
   }

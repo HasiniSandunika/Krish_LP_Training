@@ -1,14 +1,15 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Owner } from '../Owners.model';
+import { Owner } from '../model/Owners.model';
 import { Subscription } from 'rxjs';
-import { OwnerService } from '../owner.service';
+import { OwnerService } from '../service/owner.service';
 
 @Component({
   selector: 'em-list-owner',
   templateUrl: './list-owner.component.html',
   styleUrls: ['./list-owner.component.scss']
 })
+
 export class ListOwnerComponent implements OnInit, OnDestroy {
 
   title: string = 'PMS - Petcare Management System';
@@ -30,7 +31,7 @@ export class ListOwnerComponent implements OnInit, OnDestroy {
         this.owners=this.filteredOwners;
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     });
   }
@@ -68,7 +69,7 @@ export class ListOwnerComponent implements OnInit, OnDestroy {
           window.location.reload();
         },
         error: error => {
-          alert(`${error.message}`);
+          alert(`${error.error.message}`);
         }
       }
       );

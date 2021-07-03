@@ -16,7 +16,7 @@ let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [pets_module_1.PetsModule, owner_module_1.OwnerModule, mongoose_1.MongooseModule.forRoot(app_properties_1.MONGO_CONNECTION)],
+        imports: [pets_module_1.PetsModule, owner_module_1.OwnerModule, mongoose_1.MongooseModule.forRoot(app_properties_1.MONGO_CONNECTION, { useFindAndModify: false })],
     })
 ], AppModule);
 exports.AppModule = AppModule;

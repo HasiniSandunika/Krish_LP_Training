@@ -3,10 +3,10 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { OwnerCreateDTO } from "../owners/dto/OwnerCreateDTO.dto";
 import { OwnerUpdateDTO } from "../owners/dto/OwnerUpdateDTO.dto";
-import { Owner } from "../owners/Owners.model";
+import { Owner } from "../owners/model/Owners.model";
 import { PetCreateDTO } from "../pets/dto/PetCreateDTO.dto";
 import { PetUpdateDTO } from "../pets/dto/PetUpdateDTO.dto";
-import { Pet } from "../pets/Pets.model";
+import { Pet } from "../pets/model/Pets.model";
 
 @Injectable({providedIn: 'root'})
 export class HttpService{

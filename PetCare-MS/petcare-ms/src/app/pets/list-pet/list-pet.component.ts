@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { PetService } from '../pet.service';
-import { Pet } from '../Pets.model';
+import { PetService } from '../service/pet.service';
+import { Pet } from '../model/Pets.model';
 
 @Component({
   selector: 'em-list-pet',
@@ -40,7 +40,7 @@ export class ListPetComponent implements OnInit, OnDestroy {
         this.pets=this.filteredPets;
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     });
   }
@@ -69,7 +69,7 @@ export class ListPetComponent implements OnInit, OnDestroy {
         window.location.reload();
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     }
     );

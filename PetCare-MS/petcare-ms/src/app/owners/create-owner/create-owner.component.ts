@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { OwnerService } from '../owner.service';
+import { OwnerService } from '../service/owner.service';
 
 @Component({
   selector: 'em-create-owner',
@@ -47,7 +47,7 @@ export class CreateOwnerComponent implements OnInit, OnDestroy {
         this.router.navigate(['/owners']);
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     });
   }

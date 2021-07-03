@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { PetService } from '../pet.service';
+import { PetService } from '../service/pet.service';
 
 @Component({
   selector: 'em-edit-pet',
@@ -40,7 +40,7 @@ export class EditPetComponent implements OnInit, OnDestroy {
         this._eAge=data.age;
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     });
   }
@@ -67,7 +67,7 @@ export class EditPetComponent implements OnInit, OnDestroy {
           this.router.navigate(['/pets']);
         },
         error: error => {
-          alert(`${error.message}`);
+          alert(`${error.error.message}`);
         }
       });
   }

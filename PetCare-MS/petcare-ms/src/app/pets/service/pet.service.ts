@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpService } from '../shared/http.service';
-import { PetCreateDTO } from './dto/PetCreateDTO.dto';
-import { PetUpdateDTO } from './dto/PetUpdateDTO.dto';
-import { Pet } from './Pets.model';
+import { HttpService } from '../../shared/http.service';
+import { PetCreateDTO } from '../dto/PetCreateDTO.dto';
+import { PetUpdateDTO } from '../dto/PetUpdateDTO.dto';
+import { Pet } from '../model/Pets.model';
 
 @Injectable({
   providedIn: 'root'

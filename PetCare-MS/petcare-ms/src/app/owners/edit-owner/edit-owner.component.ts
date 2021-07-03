@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { OwnerService } from '../owner.service';
+import { OwnerService } from '../service/owner.service';
 
 @Component({
   selector: 'em-edit-owner',
@@ -40,7 +40,7 @@ export class EditOwnerComponent implements OnInit, OnDestroy {
         this._oEGender=data.gender;
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     });
   }
@@ -67,7 +67,7 @@ export class EditOwnerComponent implements OnInit, OnDestroy {
         this.router.navigate(['/owners']);
       },
       error: error => {
-        alert(`${error.message}`);
+        alert(`${error.error.message}`);
       }
     });
   }

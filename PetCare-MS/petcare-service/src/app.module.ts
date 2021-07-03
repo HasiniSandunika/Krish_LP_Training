@@ -5,6 +5,6 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { MONGO_CONNECTION } from './app.properties';
 
 @Module({
-  imports: [PetsModule, OwnerModule, MongooseModule.forRoot(MONGO_CONNECTION)],
+  imports: [PetsModule, OwnerModule, MongooseModule.forRoot(MONGO_CONNECTION, { useFindAndModify: false })],
 })
 export class AppModule {}
