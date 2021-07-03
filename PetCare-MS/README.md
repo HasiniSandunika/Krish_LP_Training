@@ -6,7 +6,7 @@ Front-end Angular implementation of the PetCare MS including front-end design, f
 
 ## Folder 2: petcare-service
 
-Back-end NestJS implementation of the PetCare MS including back-end error handling, back-end validations, and etc. Runs on http://localhost:3000/.
+Back-end NestJS implementation of the PetCare MS including back-end error handling, back-end validations, and etc. with MongoDB. Runs on http://localhost:3000/.
 
 
 
