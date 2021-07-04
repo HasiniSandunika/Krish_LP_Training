@@ -42,7 +42,9 @@ export class ListOwnerComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    this.subscriber.unsubscribe();
+    if(this.subscriber!=undefined){
+      this.subscriber.unsubscribe();
+    }    
   }
 
   get NameFilter(): string {

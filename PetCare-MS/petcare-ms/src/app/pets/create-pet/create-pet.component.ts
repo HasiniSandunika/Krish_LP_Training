@@ -31,7 +31,9 @@ export class CreatePetComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    this.subscriber.unsubscribe();
+    if(this.subscriber!=undefined){
+      this.subscriber.unsubscribe();
+    }    
   }
 
   createRecord(){ 

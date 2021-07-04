@@ -22,7 +22,9 @@ export class CreateOwnerComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    this.subscriber.unsubscribe();
+    if(this.subscriber!=undefined){
+      this.subscriber.unsubscribe();
+    }    
   }
 
   createCreateOwner(){

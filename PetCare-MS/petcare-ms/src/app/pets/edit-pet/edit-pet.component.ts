@@ -28,7 +28,9 @@ export class EditPetComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    this.subscriber.unsubscribe();
+    if(this.subscriber!=undefined){
+      this.subscriber.unsubscribe();
+    }    
   }
 
   getPetById(){
