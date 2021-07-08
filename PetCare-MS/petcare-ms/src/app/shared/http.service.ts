@@ -12,7 +12,7 @@ import { Pet } from "../pets/model/Pets.model";
 export class HttpService{
 
     private petUrl: string = 'http://localhost:3000/pets';
-    private ownerUrl: string = 'http://localhost:3000/owner';
+    private ownerUrl: string = 'http://localhost:4000/owner';
 
 
     constructor(private http: HttpClient){ }
